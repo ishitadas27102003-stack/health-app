@@ -1,6 +1,6 @@
 import google.generativeai as genai
 import streamlit as st
-genai.configure(api_key="AIzaSyD3G__5I9EA9eHC3myDGEvj94uaEYwwkyM")
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model=genai.GenerativeModel(model_name="gemini-2.5-flash-lite")
 st.title("AI BASED BMI CALCULATOR-KNOW YOUR HEALTH APP")
 # BMI CALCULATOR
